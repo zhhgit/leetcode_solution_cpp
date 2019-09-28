@@ -1,0 +1,39 @@
+1.vector相关：
+(1)头部应该有#include<vector>及using namespace std;
+(2)初始化：vector<int> ret {1,2,3};
+(3)获取长度：nums.size()
+(4)获取某元素：nums[3]
+(5)插入，末尾插入ret.push_back(1);
+
+2.this为指向当前对象的指针
+this->method()
+this->filed
+
+3.三种函数调用方式
+(1)传值调用swap(int x, int y)
+(2)指针调用swap(int *a, int *b)
+(3)引用调用swap(int &a, int &b)
+
+4.类的静态方法：
+(1)头文件中声明static void printNumVector(vector<int> &nums);
+(2)cpp文件中定义，void PrintUtil::printNumVector(vector<int> &nums){}
+(3)调用PrintUtil::printNumVector(nums);
+
+5.unordered_map相关：
+(1)初始化；unordered_map<int,int> map;
+(2)查找：map.find("key") != map.end()，end()方法返回迭代器指向尾后，如果不等即在map中存在为key的键。
+(3)插入：map.insert({"key","value"});
+(4)获取：map.at("key");
+
+6.数组
+(1)初始化：注意与Java的差别，int nums[] = {1,2,3};
+(2)获取长度：int len = sizeof(nums) / sizeof(nums[0]);
+
+7.最大最小值
+(1)#include<limits>
+(2)最大(numeric_limits::max)()，最小(numeric_limits::min)()
+
+8.long int 在windows 64位占4字节，在Linux 64位占8字节。
+可以使用long long。
+
+9.bool类型输出为true/false文字，cout << boolalpha << boolvar << endl;
