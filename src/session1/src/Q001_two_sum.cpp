@@ -5,7 +5,7 @@
 #include <vector>
 #include <unordered_map>
 #include "../include/Q001_two_sum.h"
-#include "../include/PrintUtil.h"
+#include "common/PrintUtil.h"
 using namespace std;
 
 void Q001_two_sum::execute() {
