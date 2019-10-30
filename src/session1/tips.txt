@@ -12,7 +12,8 @@
 (3)数组作为参数传递进函数时会退化为指针，获取长度错误；
 
 4.运算
-(1)最大最小值：(a)#include<limits>。(b)最大(numeric_limits::max)()，最小(numeric_limits::min)()
+(1)类型最大最小值：(a)#include<limits>。(b)最大(numeric_limits::max)()，最小(numeric_limits::min)()
+(2)比较最大最小值： #include<algorithm> max(a,b); min(a,b);
 
 5.面向对象
 (1)类的静态方法：(a)头文件中声明static void printNumVector(vector<int> &nums);(b)cpp文件中定义，void PrintUtil::printNumVector(vector<int> &nums){} (c)调用PrintUtil::printNumVector(nums);
@@ -28,6 +29,8 @@
 (3)遍历：a).s[i]；b).for(auto c:str)
 (4)构造：string("str"),string(1,'c')
 (5)拼接：str1.append("aaa");
+(6)数字转字符串：to_string(5);
+(7)查找包含字符位置：s.find_first_not_of(" ");s.find_last_not_of(" ");查找不到就返回-1。
 
 8.stack：
 (1)#include<stack>

@@ -10,12 +10,14 @@
 #include "include/Q027_remove_element.h"
 #include "include/Q028_implement_strstr.h"
 #include "include/Q035_search_insert_position.h"
-
+#include "include/Q038_count_and_say.h"
+#include "include/Q053_maximum_subarray.h"
+#include "include/Q058_length_of_last_word.h"
 
 using namespace std;
 
 int main(){
-    Q035_search_insert_position solution1;
+    Q058_length_of_last_word solution1;
     solution1.execute();
     return 0;
 }
